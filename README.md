@@ -19,14 +19,17 @@ Provider 建完之後，點選 Messaging API 下面的 Create API
 ![image](https://github.com/kh555069/bb-line-bot/blob/master/pic/5.png)
 ![image](https://github.com/kh555069/bb-line-bot/blob/master/pic/6.png)
 
-完成之後點進你的Bot，將 Auto-reply messages 以及 Greeting messages 關掉
+完成之後點進你的Bot，看到Using LINE@ features, 點擊右邊的 Set message ， 將 Auto-reply messages 以及 Greeting messages 關掉，順便把 Webhooks 打開
+![image](https://github.com/kh555069/bb-line-bot/blob/master/pic/11.png)
 ![image](https://github.com/kh555069/bb-line-bot/blob/master/pic/12.png)
 
-在 webhook URL 貼上架在heroku上的server，然後點擊驗證
+在 webhook URL 貼上架在heroku上的server，然後點擊驗證。
+最後記得點擊 Channel access token 右邊的 Issue 取得 token。
 ![image](https://github.com/kh555069/bb-line-bot/blob/master/pic/13.png)
 ![image](https://github.com/kh555069/bb-line-bot/blob/master/pic/14.png)
 
-這裡比較重要的東西有 "Channel ID", "Channel secret", "Channel access token"
+
+這裡比較重要的東西有 "Channel ID", "Channel secret", "Channel access token"，在 server.js 裡會用到。
 
 # 安裝 node
 sudo apt-get install nodejs -y
