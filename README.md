@@ -33,7 +33,7 @@ create 完之後記得加上 `heroku git:remote -a bb-line-bot`
 
 `git add .`
 
-`git commit -m 'init'
+`git commit -m 'init'`
 
 `git push heroku master`
 
