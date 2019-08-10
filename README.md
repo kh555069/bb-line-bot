@@ -7,12 +7,24 @@
 ## 申請Line Messaging API (aka Line Bot)
 https://developers.line.biz/en/
 
-Login 之後點選 Create new provider， 輸入 Provider Name 然後送出，
-Provider 建完之後，點選 Messaging API 下面的 Create API，
-輸入Bot 的資料，這裡輸入的名字就是Line聊天時顯示的名字，
-Privacy Policy URL 跟 Terms of use URL 可以先空著，
-然後送出、確認、送出就完成申請啦
+Login 之後點選 Create new provider， 輸入 Provider Name 然後送出
+![image](https://github.com/kh555069/bb-line-bot/blob/master/pic/1.png)
+![image](https://github.com/kh555069/bb-line-bot/blob/master/pic/2.png)
+
+Provider 建完之後，點選 Messaging API 下面的 Create API
+![image](https://github.com/kh555069/bb-line-bot/blob/master/pic/3.png)
+
+輸入Bot 的資料，這裡輸入的名字就是Line聊天時顯示的名字，Privacy Policy URL 跟 Terms of use URL 可以先空著，然後送出、確認、送出就完成申請啦
+![image](https://github.com/kh555069/bb-line-bot/blob/master/pic/4.png)
+![image](https://github.com/kh555069/bb-line-bot/blob/master/pic/5.png)
+![image](https://github.com/kh555069/bb-line-bot/blob/master/pic/6.png)
+
 完成之後點進你的Bot，將 Auto-reply messages 以及 Greeting messages 關掉
+![image](https://github.com/kh555069/bb-line-bot/blob/master/pic/12.png)
+
+在 webhook URL 貼上架在heroku上的server，然後點擊驗證
+![image](https://github.com/kh555069/bb-line-bot/blob/master/pic/13.png)
+![image](https://github.com/kh555069/bb-line-bot/blob/master/pic/14.png)
 
 這裡比較重要的東西有 "Channel ID", "Channel secret", "Channel access token"
 
@@ -28,6 +40,7 @@ npm install cheerio request linebot
 `git init`
 
 `heroku create bb-line-bot`
+![image](https://github.com/kh555069/bb-line-bot/blob/master/pic/0.png)
 
 create 完之後記得加上 `heroku git:remote -a bb-line-bot`
 
